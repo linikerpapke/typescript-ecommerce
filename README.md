@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Criado com Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Clonando e Rodando o App
 
-In the project directory, you can run:
+Para rodar o projeto corretamente, após clonar o repositório, utilize os seguintes comandos:
+
+### `npm install`
+
+Mesmo clonando o repositório, será preciso instalar todas as dependências.
+Por isso utilizar o comando acima é essencial para o correto funcionamento.
+
+Depois de instaladas as dependências, basta rodar o programa com:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para rodar a aplicação no modo de desenvolvimento!
+Será aberta a [http://localhost:3000](http://localhost:3000) para visualizar no browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Lembre de abrir o console para checar possíveis erros de clonagem e instalação do repositório.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Rode o test se desejar. Em caso de dúvidas, descubra mais sobre os testes em [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Considerações Sobre o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Fake Api`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O projeto consome a Fake Store API, cuja documentação está presente em [Fake Store API](https://fakestoreapi.com/docs#products).
 
-### `npm run eject`
+### `TypeScript`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Foi escolhido o uso do superconjunto de JavaScript para adequação à tarefa, mas também para facilitar
+a tipagem estática, a orientação a objetos e a testagem de bugs em tempo real no modo de desenvolvimento.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Styled Components`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O projeto utiliza Styled Components em preferência ao CSS primeiro para demonstração de conhecimento e,
+em segundo lugar, porque a biblioteca automatiza nomes de classes dinâmicos, remove CSS não utilizado,
+facilita a implantação de estilos dinâmicos e, no longo prazo, diminui a dotação orçamentária para
+manutenção dos estilos da aplicação.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `JEST`
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para testes foi escolhido o JEST, disponível apenas no modo desenvolvimento --save-dev.
